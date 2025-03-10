@@ -1,12 +1,14 @@
+import { useState } from "react";
 
 type ProfileCardProps = {
     image: string,
     name: string,
-    bio: string
+    bio: string,
+    like: any,
 }
 
 function ProfileCard(dataProfilecards: ProfileCardProps) {
-    const { image, name, bio } = dataProfilecards;
+    const { image, name, bio, like } = dataProfilecards;
 
     return(
         <>
@@ -15,6 +17,7 @@ function ProfileCard(dataProfilecards: ProfileCardProps) {
                 <p>
                     Name: {name}<br/>
                     Bio: {bio}
+                    <br/>{like}
                 </p>
             </div>
         </>

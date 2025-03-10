@@ -25,6 +25,12 @@
   width: 300px;
 }
 
+.button-like {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
 a {
   font-weight: 500;
   color: #646cff;
